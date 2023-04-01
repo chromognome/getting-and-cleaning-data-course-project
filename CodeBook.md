@@ -2,7 +2,7 @@
 
 ### **Collect source data for the project**  
 
-##### **Description**  
+#### **Description**  
 
 Zip file: [Human Activity Recognition Using Smartphones Data Set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
@@ -12,7 +12,7 @@ A group of 30 volunteers performed six activities (WALKING, WALKING_UPSTAIRS, WA
 
 Check the README.txt and features_info.txt files for further details about this data set.  
 
-##### **Zip file folder structure**  
+#### **Zip file folder structure**  
 
 Location of the text files in the folder structure:  
 
@@ -33,7 +33,7 @@ Location of the text files in the folder structure:
     ├── features_info.txt     
     └── README.txt   
 ```  
-##### **File and attribute information**  
+#### **File and attribute information**  
 
 - `activity_labels.txt` -- Ordered list of the six activities
 - `features.txt` -- List of the 561 variables
@@ -46,7 +46,7 @@ Location of the text files in the folder structure:
 - `X_train.txt` -- 561-feature vector with time and frequency domain variables with 7352 rows 
 - `y_train.txt` -- Identifies the activity performed using integers. Contains 7352 rows
 
-##### **Activities**  
+#### **Activities**  
 
 The activities performed by the volunteers have these values and descriptions:  
 
@@ -57,7 +57,7 @@ The activities performed by the volunteers have these values and descriptions:
 5. `STANDING`
 6. `LAYING`  
 
-##### **Reference**
+#### **Reference**
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012  
 
@@ -65,7 +65,7 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 
 ### **Work with and clean the data**  
 
-##### **Code**  
+#### **Code**  
 
 The steps taken to combine and clean this data are recorded in this script:  
 
@@ -94,7 +94,7 @@ Refer to the comments in the script for explanation of the code used to perform 
 
 ### **The tidy data** 
 
-##### **Columns** 
+#### **Columns** 
 
 The first three columns identify the volunteer carrying out the experiment (`subject`), the activity performed (`activity`), and which data set the summarised records came from (`dataset`). The remaining columns contain the means of each variable grouped by `subject` and `activity`.  
 
