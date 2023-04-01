@@ -4,7 +4,6 @@ library(data.table)
 ## This script reads the 'Human Activity Recognition Using Smartphones Data Set' and manipulates the files,
 ## cleans them, and creates two tidy data sets. The second data set is a summarised version of the first,
 ## containing variable means grouped by the volunteer and activity. This table is written to a file. 
-
 ## Refer to CodeBook.md for explanation of the files and their contents. 
 
 
@@ -78,6 +77,7 @@ tidy_data <- data.table(subject_id, y_data, x_clean) |> group_by(subject, activi
 remove(filePath, feature_names, activity_labels, subject_test, x_test, y_test, subject_train)
 remove(x_train, y_train, y_data, subject_id, x_columns, x_data, x_clean) 
 
+
 ## Create the summarised table, calculating the mean of the variables over the groups
 
 tidy_data_summary <- tidy_data |> summarise_all(mean) |> arrange(subject, activity)
@@ -85,4 +85,4 @@ tidy_data_summary <- tidy_data |> summarise_all(mean) |> arrange(subject, activi
 
 ## Write summarised tidy data to text file
 
-write.table(tidy_data_summary,"data/tidy_data_summary.txt",row.name=FALSE)
+write.table(tidy_data_summary, "data/tidy_data_summary.txt", row.name=FALSE)
